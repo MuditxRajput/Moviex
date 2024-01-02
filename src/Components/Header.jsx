@@ -37,8 +37,8 @@ const Header = () => {
           menuOpen ? "bg-black-start" : "bg-transparent"
         } justify-between items-center`}
       >
-        <div className="mx-10 mt-1 mb-1">
-          <img src={Logo} alt="" />
+        <div className="mx-6 sm:mx-10 mt-1 mb-1">
+          <img src={Logo} alt="" className=" w-28 sm:w-28 md:w-32" />
         </div>
         <div className="hidden sm:flex sm:flex-col px-2">
           <HeaderMenu />

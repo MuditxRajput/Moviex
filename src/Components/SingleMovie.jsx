@@ -9,7 +9,6 @@ const SingleMovie = () => {
   const[getData,setGetData] = useState(false)
   // Call the hook and pass the movie ID
   const { singleMovieDetail } = useSingleMovie(id);
-
   // Use useEffect to log the detailed movie when it's available
   const detailedMovie = useSelector((state) => state?.movies?.singleMovies);
   useEffect(() => {
@@ -24,9 +23,14 @@ const SingleMovie = () => {
     }
 
   return (
-    <div className=' absolute bg-black-start   top-0 w-full'>
-      <SingleMovieBackground/>
-      <TopCast/>
+    <div className=' absolute bg-black-start h-full  top-0 w-full'>
+      {/* <div> */}
+      <div>
+       <SingleMovieBackground/>
+       <TopCast/>
+      </div>
+      {/* </div> */}
+     
      
     </div>
   );

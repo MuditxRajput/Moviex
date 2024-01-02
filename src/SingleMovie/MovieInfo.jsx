@@ -5,7 +5,7 @@ const MovieInfo = () => {
     const MovieInfo = useSelector((state)=>state?.movies?.singleMovies)
     // console.log(MovieInfo);
   return (
-    <div className='mt-4 gap-3'>
+    <div className='mt-4 mx-4 md:mx-0'>
         <div className='flex gap-6'>
             <div className='mb-2'>
                 <p className=' text-white font-semibold' >Status: <span className='font-thin text-slate-400'>{MovieInfo?.status}</span></p>
